@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificação - VaralTech</title>
+    <link rel="stylesheet" href="../css/otp.css">
+</head>
+<body>
+    <div class="otp-container">
+        <img class="img-logo" src="../img/Logo.png" alt="logo">
+        <h2>Verificação de Segurança</h2>
+        <h3>Digite o código de 6 dígitos enviado para o seu e-mail</h3>
+
+        <div class="otp-inputs">
+            <input type="text" class="otp-digit" maxlength="1" inputmode="numeric">
+            <input type="text" class="otp-digit" maxlength="1" inputmode="numeric">
+            <input type="text" class="otp-digit" maxlength="1" inputmode="numeric">
+            <input type="text" class="otp-digit" maxlength="1" inputmode="numeric">
+            <input type="text" class="otp-digit" maxlength="1" inputmode="numeric">
+            <input type="text" class="otp-digit" maxlength="1" inputmode="numeric">
+        </div>
+
+        <p class="timer-msg" id="timer-msg">O código expira em <span id="countdown">15:00</span></p>
+
+        <button class="bnt-verify" id="btn-verify">Verificar</button>
+
+        <p class="error-msg" id="error-msg"></p>
+
+        <a href="../html/login.html" class="back-link">← Voltar ao login</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="../js/otp.js"></script>
+</body>
+</html>
