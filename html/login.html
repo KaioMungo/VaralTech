@@ -2,24 +2,32 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <title>Login - VaralTech</title>
     <link rel="stylesheet" href="../css/login.css">
-    <title>Login Page</title>
-
 </head>
 <body>
     <div class="login-container">
         <img class="img-logo" src="../img/Logo.png" alt="logo">
         <h2>Bem Vindo de Volta</h2>
         <h3>Entre para continuar revolucionando a sua vida</h3>
+
         <div class="input-container">
-            <input class="email"type="email" alt="email" id="email" placeholder="E-mail">
-            <input class="password" type="password" alt="password" id="password" placeholder="Senha">
+            <input type="email" id="email" placeholder="E-mail">
+            <input type="password" id="password" placeholder="Senha">
         </div>
+
         <a href="">Esqueceu a senha?</a>
-        <button class="bnt-login">Entrar</button>
-        <a class="sign-up-bnt" href="../html/cadastro.html">Não possui uma conta? <strong>Cadastre-se</strong></a>
+
+        <button class="bnt-login" id="btn-login">Entrar</button>
+
+        <p class="error-msg" id="error-msg"></p>
+
+        <a class="sign-up-bnt" href="../html/cadastro.html">
+            Não possui uma conta? <strong>Cadastre-se</strong>
+        </a>
     </div>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 </html>
